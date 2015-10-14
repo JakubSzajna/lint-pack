@@ -1,0 +1,41 @@
+{
+    "name": "jakub-szajna/lint-pack",
+    "description": "Laravel package with linter for Artisan CLI",
+    "type": "laravel-package",
+    "keywords": ["lint", "phpcs", "phpmd", "jshint"],
+    "homepage": "https://github.com/JakubSzajna/lint-pack",
+    "license": "MIT",
+    "version": "1.0",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Jakub Szajna",
+            "email": "ja.szajna@gmail.com"
+        },
+        {
+            "name": "Igor Rzegocki",
+            "email": "ajgon@irgon.com",
+            "homepage": "http://rzegocki.pl/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.1.*",
+        "illuminate/support": "~5.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": ">=2.0",
+        "phpmd/phpmd" : ">=2.0",
+        "sebastian/phpcpd": ">=2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JakubSzajna\\LintPack\\": "package/"
+        }
+    },
+    "suggest": {
+        "squizlabs/php_codesniffer": "Set lint.phpcs.bin = bin/phpcs and you have embeded phpcs out of the box",
+        "phpmd/phpmd": "Set lint.phpmd.bin = bin/phpmd and you have embeded phpmd out of the box",
+        "sebastian/phpcpd": "Set lint.phpcpd.bin = bin/phpcpd and you have embeded phpcpd out of the box"
+    }
+}
